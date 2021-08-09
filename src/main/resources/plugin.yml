@@ -1,0 +1,25 @@
+name: ItemSpawners
+main: me.dkim19375.itemspawners.ItemSpawners
+version: ${pluginVersion}
+description: A plugin that creates item spawners
+author: dkim19375
+softdepend:
+  - 'WorldManager'
+  - 'Multiverse-Core'
+
+commands:
+  itemspawners:
+    description: Main Command
+    usage: /itemspawners help
+
+permissions:
+  itemspawners.command:
+    description: Run the command
+  itemspawners.reload:
+    description: Reload the plugin's config and data files
+  itemspawners.edit:
+    description: Create and edit spawners
+  itemspawners.list:
+    description: List spawners
+  itemspawners.delete:
+    description: Delete spawners
