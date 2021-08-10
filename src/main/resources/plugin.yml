@@ -6,6 +6,7 @@ author: dkim19375
 softdepend:
   - 'WorldManager'
   - 'Multiverse-Core'
+website: 'https://www.spigotmc.org/resources/ItemSpawners.95173/'
 
 commands:
   itemspawners:
