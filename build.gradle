@@ -43,6 +43,7 @@ dependencies {
     implementation('org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10') {
         exclude module: 'annotations'
     }
+    implementation slimjar("1.2.6")
 
     //noinspection GradlePackageUpdate
     slim 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
@@ -80,6 +81,7 @@ static def addRepositories(Project project) {
 }
 
 processResources {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
     from(sourceSets.main.resources.srcDirs) {
         expand 'pluginVersion': version
     }
