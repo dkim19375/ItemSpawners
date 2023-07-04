@@ -20,7 +20,7 @@ package me.dkim19375.itemspawners
 
 import io.github.slimjar.app.builder.ApplicationBuilder
 import me.dkim19375.dkimbukkitcore.checker.UpdateChecker
-import me.dkim19375.dkimbukkitcore.config.ConfigFile
+import me.dkim19375.dkimbukkitcore.config.SpigotConfigFile
 import me.dkim19375.dkimbukkitcore.function.logInfo
 import me.dkim19375.dkimbukkitcore.javaplugin.CoreJavaPlugin
 import me.dkim19375.itemspawners.command.ItemSpawnerCmd
@@ -29,13 +29,14 @@ import me.dkim19375.itemspawners.data.SpawnerData
 import me.dkim19375.itemspawners.manager.SpawnersManager
 import org.bukkit.Bukkit
 import org.bukkit.configuration.serialization.ConfigurationSerialization
+import java.io.File
 import java.util.logging.Level
 import kotlin.system.measureTimeMillis
 
 class ItemSpawners : CoreJavaPlugin() {
     override val defaultConfig: Boolean = false
     private val updateChecker = UpdateChecker("95173", null, this)
-    val spawnersFile by lazy { ConfigFile(this, "data/spawners.yml") }
+    val spawnersFile by lazy { SpigotConfigFile(this, File(dataFolder, "data/spawners.yml")) }
     val spawnersManager = SpawnersManager(this)
     var currentTick = 0L
         private set
