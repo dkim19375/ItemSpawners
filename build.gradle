@@ -36,7 +36,7 @@ dependencies {
     compileOnly 'org.jetbrains:annotations:24.0.1'
     compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
 
-    implementation('io.github.dkim19375:dkim-bukkit-core:3.3.45') {
+    implementation('io.github.dkim19375:dkim-bukkit-core:3.4.3') {
         exclude group: 'org.jetbrains.kotlin'
         exclude group: 'org.jetbrains.kotlinx'
     }
