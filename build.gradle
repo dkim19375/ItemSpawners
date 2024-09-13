@@ -48,7 +48,7 @@ dependencies {
     //noinspection GradlePackageUpdate
     slim 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0'
     //noinspection GradlePackageUpdate
-    slim 'org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.8.1'
+    slim 'org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.9.0'
 }
 
 compileKotlin {
