@@ -33,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.jetbrains:annotations:24.1.0'
+    compileOnly 'org.jetbrains:annotations:25.0.0'
     compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
 
     implementation('io.github.dkim19375:dkim-bukkit-core:3.4.7') {
